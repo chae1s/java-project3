@@ -2,14 +2,14 @@ package com.example.javaproject3.week1;
 
 public class PrintfNextLineMultiTable {
     public static void main(String[] args) {
-        System.out.printf("%d * %d = %d\n", 2, 1, 2);
-        System.out.printf("%d * %d = %d\n", 2, 2, 4);
-        System.out.printf("%d * %d = %d\n", 2, 3, 6);
-        System.out.printf("%d * %d = %d\n", 2, 4, 8);
-        System.out.printf("%d * %d = %d\n", 2, 5, 10);
-        System.out.printf("%d * %d = %d\n", 2, 6, 12);
-        System.out.printf("%d * %d = %d\n", 2, 7, 14);
-        System.out.printf("%d * %d = %d\n", 2, 8, 16);
-        System.out.printf("%d * %d = %d\n", 2, 9, 18);
+        System.out.printf("%d * %d = %d\n", 2, 1, 2 * 1);
+        System.out.printf("%d * %d = %d\n", 2, 2, 2 * 2);
+        System.out.printf("%d * %d = %d\n", 2, 3, 2 * 3);
+        System.out.printf("%d * %d = %d\n", 2, 4, 2 * 4);
+        System.out.printf("%d * %d = %d\n", 2, 5, 2 * 5);
+        System.out.printf("%d * %d = %d\n", 2, 6, 2 * 6);
+        System.out.printf("%d * %d = %d\n", 2, 7, 2 * 7);
+        System.out.printf("%d * %d = %d\n", 2, 8, 2 * 8);
+        System.out.printf("%d * %d = %d\n", 2, 9, 2 * 9);
     }
 }
