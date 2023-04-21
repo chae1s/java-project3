@@ -21,5 +21,8 @@ public class PointTest {
         point3.y = 2;
         System.out.printf("Point : (%d, %d)\n", point3.x, point3.y);
         System.out.printf("xy 같은가? %s\n", point3.isSameXy());
+
+        double p2ToP3 = point2.getDistance(point3);
+        System.out.printf("point2와 point3 사이의 거리 : %f", p2ToP3);
     }
 }
