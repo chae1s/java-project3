@@ -9,5 +9,13 @@ public class BooleanEx {
 
         System.out.println("isPaymentSuccess = " + isPaymentSuccess);
         System.out.println("isBalanceSufficient = " + isBalanceSufficient);
+
+        int age = 10;
+        boolean isAdult = age >= 18;
+
+        boolean isChild = age < 14;
+        System.out.println("isAdult = " + isAdult);
+        System.out.println("isChild = " + isChild);
     }
+    
 }
