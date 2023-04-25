@@ -2,11 +2,12 @@ package com.example.javaproject3.codeup;
 
 import java.util.Scanner;
 
-public class Codeup1018 {
+public class Codeup1039 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String time = sc.nextLine();
-        String[] timeArr = time.split(":");
-        System.out.printf("%s:%s", timeArr[0], timeArr[1]);
+        long lVal1 = sc.nextLong();
+        long lVal2 = sc.nextLong();
+
+        System.out.printf("%d", lVal1 + lVal2);
     }
 }
