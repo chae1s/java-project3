@@ -5,11 +5,11 @@ import java.util.Arrays;
 public class TwoDimArrFillColumn {
     public static void main(String[] args) {
         int[][] arr = new int[5][5];
-        arr[2][0] = 1;
-        arr[2][1] = 2;
+        arr[0][2] = 1;
+        arr[1][2] = 2;
         arr[2][2] = 3;
-        arr[2][3] = 4;
-        arr[2][4] = 5;
+        arr[3][2] = 4;
+        arr[4][2] = 5;
 
         System.out.println(Arrays.toString(arr[0]));
         System.out.println(Arrays.toString(arr[1]));
