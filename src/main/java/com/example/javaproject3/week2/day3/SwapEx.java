@@ -11,6 +11,5 @@ public class SwapEx {
         arr[0] = temp;
 
         System.out.println(Arrays.toString(arr));
-
     }
 }
