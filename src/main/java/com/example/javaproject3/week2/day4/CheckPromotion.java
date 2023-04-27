@@ -7,6 +7,6 @@ public class CheckPromotion {
 
         boolean isPromotion = yearsOrExp > 5 || numOfProject > 10;
 
-        System.out.printf("팀장 승진 어부 : %b\n", isPromotion);
+        System.out.printf("팀장 승진 여부 : %b\n", isPromotion);
     }
 }
