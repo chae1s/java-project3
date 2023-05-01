@@ -1,10 +1,12 @@
 package com.example.javaproject3.programmers;
 
+import java.util.Arrays;
+
 public class SequenceQuery {
     public static void main(String[] args) {
         int[] arr = {0, 1, 2, 3, 4};
         int[][] queries = {{0, 3},{1, 2},{1, 4}};
-        solution(arr, queries);
+        System.out.println(Arrays.toString(solution(arr, queries)));
     }
 
     public static int[] solution(int[] arr, int[][] queries) {
