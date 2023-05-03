@@ -1,6 +1,6 @@
 package com.example.javaproject3.programmers;
 
-public class PrimeSum {
+public class DivisorSum {
     public static void main(String[] args) {
         System.out.println(solution(12));
     }
