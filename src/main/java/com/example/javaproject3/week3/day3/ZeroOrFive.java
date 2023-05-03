@@ -14,6 +14,7 @@ public class ZeroOrFive {
             int remainder = n % 10;
             if (remainder % 5 != 0) {
                 flagTest = "0 또는 5로 이루어진 숫자 아님";
+                break;
             }
             n /= 10;
 
