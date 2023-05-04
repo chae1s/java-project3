@@ -18,7 +18,48 @@ public class Codeup1099 {
         boolean ate = false;
         int i = 1;
         int j = 1;
-        while (i < 10) {
+
+        int count = 1;
+        for (int k = 1; k < 9; k++) {
+            for (int l = count; l < 9; l++) {
+                if(antHouse[k][l] == 2) {
+                    System.out.println("먹이");
+                    antHouse[k][l] = 9;
+                    ate = true;
+                    break;
+                }
+                antHouse[k][l] = 9;
+                if(antHouse[k][l+1] != 1) {
+                    continue;
+                } else if(antHouse[k+1][l] != 1) {
+                    System.out.println(antHouse[k+1][l]);
+                    count = l;
+                    break;
+                }
+            }
+            if (ate) {
+                break;
+            }
+        }
+
+        while (i < 9 && j < 9) {
+            if (antHouse[i][j] == 2) {
+                antHouse[i][j] = 9;
+                break;
+            }
+            antHouse[i][j] = 9;
+
+            if (antHouse[i][j + 1] != 1) {
+                j++;
+            } else if (antHouse[i + 1][j] != 1) {
+                i++;
+            } else {
+                break;
+            }
+        }
+
+
+        /*while (i < 10) {
             while(j < 10) {
                 if(antHouse[i][j] == 0) {
                     antHouse[i][j] = 9;
@@ -37,7 +78,7 @@ public class Codeup1099 {
             if (ate) {
                 break;
             }
-        }
+        }*/
 
         print(antHouse);
     }
