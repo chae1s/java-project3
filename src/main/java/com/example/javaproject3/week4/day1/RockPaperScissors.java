@@ -1,5 +1,8 @@
 package com.example.javaproject3.week4.day1;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class RockPaperScissors {
     public String play(int user, int computer) {
         if (user == 0 && computer == 1) {
@@ -15,19 +18,39 @@ public class RockPaperScissors {
         }
     }
 
-    public String play2(int user, int computer) {
-        //바위 = 0, 가위 = 1, 보 = 2
-        int flag = user - computer;
-        switch (flag) {
-            case 0: return "tie";
-            case -1: return "win";
-            case 1, -2: return "lose";
-            default: return "Error";
-        }
+    public int getRandRange(int from, int to) {
+        Random ran = new Random();
+        return from + ran.nextInt(to - from + 1);
+    }
+
+    public String getRockScissorPaper(int num) {
+        return switch (num) {
+            case 0 -> "바위";
+            case 1 -> "가위";
+            case 2 -> "보";
+            default -> "ERROR";
+        };
+    }
+    public int getRockScissorPaperNum(String str) {
+        return switch (str) {
+            case "바위" -> 0;
+            case "가위" -> 1;
+            case "보" -> 2;
+            default -> 999;
+        };
     }
 
     public static void main(String[] args) {
-        RockPaperScissors rockPaperScissors = new RockPaperScissors();
-        System.out.println(rockPaperScissors.play(0, 2));
+        Scanner sc = new Scanner(System.in);
+        RockPaperScissors rps = new RockPaperScissors();
+        int iRps;
+        String playResult;
+        System.out.println("이길때까지 하는 가위바위보 게임!");
+        do {
+            System.out.printf("가위 바위 보 중 하나를 내세요:");
+            iRps = rps.getRockScissorPaperNum(sc.nextLine());
+            playResult = rps.play(iRps, rps.getRandRange(0, 2));
+            System.out.println(playResult);
+        } while (!"win".equals(playResult));
     }
 }
