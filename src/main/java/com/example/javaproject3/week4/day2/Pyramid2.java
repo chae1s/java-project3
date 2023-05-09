@@ -6,6 +6,7 @@ public class Pyramid2 {
     public Pyramid2(String spaceChar) {
         this.spaceChar = spaceChar;
     }
+
     public static void main(String[] args) {
         int height = 4;
         Pyramid2 pyramid2 = new Pyramid2("0");
