@@ -11,7 +11,7 @@ public class ReversePyramid {
     }
 
     public String makeParallelogramALine(int height, int i) {
-        return String.format("%s%s", spaceChar.repeat(height - i), "*".repeat(2 * i - 1));
+        return String.format("%s%s", spaceChar.repeat(height - i), "*".repeat(height));
     }
 
     public void printPyramid(int height) {
