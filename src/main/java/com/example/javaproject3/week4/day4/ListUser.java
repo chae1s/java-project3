@@ -1,36 +1,20 @@
 package com.example.javaproject3.week4.day4;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ListUser {
-    private String name;
-    private String phoneNumber;
-    private int age;
+    public static void main(String[] args) {
+        List<User> users = new ArrayList<>();
 
-    public ListUser(String name, String phoneNumber, int age) {
-        this.name = name;
-        this.phoneNumber = phoneNumber;
-        this.age = age;
-    }
-    public String getName() {
-        return name;
-    }
+        User user1 = new User("춘식", "010-1234-1234", 37);
+        users.add(user1);
 
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
+        User user2 = new User("춘배", "010-1234-1235", 14);
+        users.add(user2);
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+        for (User user : users) {
+            System.out.printf("%s님의 전화번호는 %s입니다.\n", user.getName(), user.getPhoneNumber());
+        }
     }
 }
